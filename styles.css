@@ -142,3 +142,13 @@
     padding: 7px 8px;
   }
 }
+.doctor-actions{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.doctor-actions .btn{
+  width: 100%;
+}
