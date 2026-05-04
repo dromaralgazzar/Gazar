@@ -75,3 +75,32 @@
   margin-top: 10px;
   line-height: 1.8;
 }
+.gallery-track{
+  scroll-padding-inline: 22px;
+}
+
+.gallery-card{
+  min-width: min(82vw, 520px);
+  border: 1px solid rgba(198,168,107,.28);
+  border-radius: 28px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 20px 45px rgba(17,17,17,.08);
+}
+
+.gallery-card img{
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 700px){
+  .gallery-card{
+    min-width: 82vw;
+  }
+
+  .gallery-card img{
+    height: 300px;
+  }
+}
