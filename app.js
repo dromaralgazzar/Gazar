@@ -1,27 +1,67 @@
 
-// Language-safe booking fallback
-document.addEventListener('click', function(e) {
-  const btn = e.target.closest('[data-open-booking], .book-service');
-  if (!btn) return;
-  const modal = document.getElementById('bookingModal');
-  if (!modal) {
-    e.preventDefault();
-    const lang = document.documentElement.lang || 'en';
-    const url = lang === 'tr' ? 'https://wa.me/201221753277?text=Merhaba%2C%20GAZZAR%20Dental%20Clinic%27te%20di%C5%9F%20de%C4%9Ferlendirmesi%20randevusu%20almak%20istiyorum' : 'https://wa.me/201221753277?text=Hello%2C%20I%20would%20like%20to%20book%20a%20dental%20assessment%20at%20GAZZAR%20Dental%20Clinic';
-    window.open(url, '_blank');
-  }
-}, true);
+/* BOOKING HOURS VALIDATION - GAZZAR Dental Clinic */
+(function(){
+  const form = document.getElementById('modalBookingForm');
+  if (!form) return;
 
-// FINAL_SAFE_JS_BUILD
+  const dateInput = form.querySelector('input[name="date"]');
+  const timeInput = form.querySelector('input[name="time"]');
+
+  if (timeInput) {
+    timeInput.setAttribute('min', '15:00');
+    timeInput.setAttribute('max', '22:00');
+    timeInput.setAttribute('step', '900');
+  }
+
+  function isFriday(dateValue) {
+    if (!dateValue) return false;
+    const d = new Date(dateValue + 'T12:00:00');
+    return d.getDay() === 5;
+  }
+
+  function validTime(v){
+    return v >= '15:00' && v <= '22:00';
+  }
+
+  dateInput?.addEventListener('change', function(){
+    if (isFriday(this.value)) {
+      alert('الجمعة إجازة. اختر يومًا من السبت إلى الخميس.');
+      this.value = '';
+    }
+  });
+
+  timeInput?.addEventListener('change', function(){
+    if (this.value && !validTime(this.value)) {
+      alert('المواعيد المتاحة من 3:00 مساءً إلى 10:00 مساءً فقط.');
+      this.value = '';
+    }
+  });
+
+  form.addEventListener('submit', function(e){
+    if (isFriday(dateInput?.value || '')) {
+      e.preventDefault();
+      alert('الجمعة إجازة. اختر يومًا من السبت إلى الخميس.');
+      return false;
+    }
+
+    if (!validTime(timeInput?.value || '')) {
+      e.preventDefault();
+      alert('المواعيد المتاحة من 3:00 مساءً إلى 10:00 مساءً فقط.');
+      return false;
+    }
+  }, true);
+})();
+
+
 const menu=document.querySelector('[data-menu]');
-document.querySelectorAll('[data-menu-toggle]').forEach(b=>b.addEventListener('click',()=>menu?.classList.toggle('open')));
+document.querySelectorAll('[data-menu-toggle]').forEach(b=>b.addEventListener('click',()=>menu.classList.toggle('open')));
 document.querySelectorAll('[data-menu] a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
 const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');observer.unobserve(e.target)}})},{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 const modal=document.getElementById('bookingModal');
 const modalForm=document.getElementById('modalBookingForm');
-function openBooking(service=''){if(!modal){return} modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.classList.add('modal-open');if(service){const s=modal.querySelector('select[name="service"]');if(s)s.value=service}setTimeout(()=>modal.querySelector('input[name="name"]')?.focus(),120)}
-function closeBooking(){if(!modal){return} modal.classList.remove('open');modal.setAttribute('aria-hidden','true');document.body.classList.remove('modal-open')}
+function openBooking(service=''){modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.classList.add('modal-open');if(service){const s=modal.querySelector('select[name="service"]');if(s)s.value=service}setTimeout(()=>modal.querySelector('input[name="name"]')?.focus(),120)}
+function closeBooking(){modal.classList.remove('open');modal.setAttribute('aria-hidden','true');document.body.classList.remove('modal-open')}
 document.querySelectorAll('[data-open-booking]').forEach(b=>b.addEventListener('click',e=>{e.preventDefault();openBooking()}));
 document.querySelectorAll('[data-close-booking]').forEach(b=>b.addEventListener('click',closeBooking));
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeBooking()});
