@@ -1,3 +1,17 @@
+
+// Language-safe booking fallback
+document.addEventListener('click', function(e) {
+  const btn = e.target.closest('[data-open-booking], .book-service');
+  if (!btn) return;
+  const modal = document.getElementById('bookingModal');
+  if (!modal) {
+    e.preventDefault();
+    const lang = document.documentElement.lang || 'en';
+    const url = lang === 'tr' ? 'https://wa.me/201221753277?text=Merhaba%2C%20GAZZAR%20Dental%20Clinic%27te%20di%C5%9F%20de%C4%9Ferlendirmesi%20randevusu%20almak%20istiyorum' : 'https://wa.me/201221753277?text=Hello%2C%20I%20would%20like%20to%20book%20a%20dental%20assessment%20at%20GAZZAR%20Dental%20Clinic';
+    window.open(url, '_blank');
+  }
+}, true);
+
 // FINAL_SAFE_JS_BUILD
 const menu=document.querySelector('[data-menu]');
 document.querySelectorAll('[data-menu-toggle]').forEach(b=>b.addEventListener('click',()=>menu?.classList.toggle('open')));
