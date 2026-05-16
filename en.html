@@ -23,32 +23,236 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Dentist",
-    "name": "GAZZAR Dental Clinic",
-    "alternateName": "عيادة الجزار للأسنان",
-    "url": "https://www.gazzardentalclinic.com/",
-    "image": "https://www.gazzardentalclinic.com/logo-original.png",
-    "telephone": "+20 122 175 3277",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "723 Loran, Abu Qir Street",
-      "addressLocality": "Alexandria",
-      "addressCountry": "EG"
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "@id": "https://www.gazzardentalclinic.com/#dentist",
+  "name": "GAZZAR Dental Clinic",
+  "alternateName": "عيادة الجزار للأسنان",
+  "url": "https://www.gazzardentalclinic.com/",
+  "logo": "https://www.gazzardentalclinic.com/logo-original.png",
+  "image": "https://www.gazzardentalclinic.com/clinic-front.jpg",
+  "telephone": [
+    "+20 122 175 3277",
+    "+20 3 578 9900"
+  ],
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "723 Loran, Abu Qir Street, Venezia Towers, near QNB Bank, in front of Madinet Al Ahlam",
+    "addressLocality": "Alexandria",
+    "addressRegion": "Alexandria Governorate",
+    "postalCode": "21532",
+    "addressCountry": "EG"
+  },
+  "areaServed": [
+    "Loran",
+    "Alexandria",
+    "Egypt",
+    "International patients"
+  ],
+  "medicalSpecialty": [
+    "Cosmetic Dentistry",
+    "Clear Aligners",
+    "Dental Implants",
+    "Digital Smile Design",
+    "Dental Tourism"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Dr. Omar El-Gazzar",
+    "url": "https://www.gazzardentalclinic.com/dr-omar-elgazzar.html"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Saturday",
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "opens": "15:00",
+      "closes": "22:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/gazzardentalclinics",
+    "https://www.facebook.com/share/1B3yHsctPV/",
+    "https://www.tiktok.com/@gazzar.dental.clinics"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "@id": "https://www.gazzardentalclinic.com/en.html#services",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Service",
+        "name": "Clear Aligners",
+        "url": "https://www.gazzardentalclinic.com/clear-aligners-alexandria-en.html",
+        "description": "Discreet orthodontic treatment with digital planning in Alexandria.",
+        "provider": {
+          "@id": "https://www.gazzardentalclinic.com/#dentist"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "EGP",
+          "price": "25000",
+          "availability": "https://schema.org/InStock"
+        }
+      }
     },
-    "areaServed": ["Alexandria", "Egypt", "International patients"],
-    "medicalSpecialty": ["Cosmetic Dentistry", "Clear Aligners", "Dental Implants", "Digital Smile Design"],
-    "founder": {"@type":"Person","name":"Dr. Omar El-Gazzar"},
-    "sameAs": [
-      "https://www.instagram.com/gazzardentalclinics",
-      "https://www.facebook.com/share/1B3yHsctPV/",
-      "https://www.tiktok.com/@gazzar.dental.clinics"
-    ]
-  }
-  </script>
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Service",
+        "name": "Swiss Emax Veneers",
+        "url": "https://www.gazzardentalclinic.com/emax-veneers-alexandria-en.html",
+        "description": "Natural-looking smile makeover veneers in Alexandria.",
+        "provider": {
+          "@id": "https://www.gazzardentalclinic.com/#dentist"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "EGP",
+          "price": "50000",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Service",
+        "name": "Laser Teeth Whitening",
+        "url": "https://www.gazzardentalclinic.com/laser-teeth-whitening-alexandria-en.html",
+        "description": "In-clinic laser whitening after dental assessment.",
+        "provider": {
+          "@id": "https://www.gazzardentalclinic.com/#dentist"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "EGP",
+          "price": "3500",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Service",
+        "name": "Zirconia Crowns",
+        "url": "https://www.gazzardentalclinic.com/zirconia-crowns-alexandria-en.html",
+        "description": "Strong natural-looking zirconia dental crowns.",
+        "provider": {
+          "@id": "https://www.gazzardentalclinic.com/#dentist"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "EGP",
+          "price": "3500",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "Service",
+        "name": "Full Arch Dental Implants",
+        "url": "https://www.gazzardentalclinic.com/full-arch-dental-implants-alexandria-en.html",
+        "description": "Full-arch teeth restoration after clinical and digital evaluation.",
+        "provider": {
+          "@id": "https://www.gazzardentalclinic.com/#dentist"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "EGP",
+          "price": "90000",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://www.gazzardentalclinic.com/en.html#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is GAZZAR Dental Clinic suitable for international patients?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. International patients can start with a remote photo or video assessment before traveling to Alexandria."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What cosmetic dental treatments are available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The clinic offers clear aligners, Swiss Emax veneers, laser whitening, zirconia crowns, composite restorations and full-arch implants."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I get a starting price before visiting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Starting prices are displayed for key treatments, while the final plan depends on examination, x-rays and clinical needs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I book an appointment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can book directly through WhatsApp or phone, and the clinic team will confirm your appointment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is GAZZAR Dental Clinic located?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The clinic is located at 723 Loran, Abu Qir Street, Venezia Towers, near QNB Bank, Alexandria, Egypt."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.gazzardentalclinic.com/en.html"
+    }
+  ]
+}
+</script>
 </head>
 <body class="inner-page english-page">
   <!-- SEO_GEO_FINAL_VISIBLE_BUILD_2026 -->

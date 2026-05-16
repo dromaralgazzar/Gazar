@@ -23,32 +23,236 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Dentist",
-    "name": "GAZZAR Dental Clinic",
-    "alternateName": "عيادة الجزار للأسنان",
-    "url": "https://www.gazzardentalclinic.com/",
-    "image": "https://www.gazzardentalclinic.com/logo-original.png",
-    "telephone": "+20 122 175 3277",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "723 Loran, Abu Qir Street",
-      "addressLocality": "Alexandria",
-      "addressCountry": "EG"
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "@id": "https://www.gazzardentalclinic.com/#dentist",
+  "name": "GAZZAR Dental Clinic",
+  "alternateName": "عيادة الجزار للأسنان",
+  "url": "https://www.gazzardentalclinic.com/",
+  "logo": "https://www.gazzardentalclinic.com/logo-original.png",
+  "image": "https://www.gazzardentalclinic.com/clinic-front.jpg",
+  "telephone": [
+    "+20 122 175 3277",
+    "+20 3 578 9900"
+  ],
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "723 Loran, Abu Qir Street, Venezia Towers, near QNB Bank, in front of Madinet Al Ahlam",
+    "addressLocality": "Alexandria",
+    "addressRegion": "Alexandria Governorate",
+    "postalCode": "21532",
+    "addressCountry": "EG"
+  },
+  "areaServed": [
+    "Loran",
+    "Alexandria",
+    "Egypt",
+    "International patients"
+  ],
+  "medicalSpecialty": [
+    "Estetik Diş Hekimliği",
+    "Şeffaf Plak",
+    "Dental İmplant",
+    "Dijital Gülüş Tasarımı",
+    "Dental Turizm"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Dr. Omar El-Gazzar",
+    "url": "https://www.gazzardentalclinic.com/dr-omar-elgazzar.html"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Saturday",
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "opens": "15:00",
+      "closes": "22:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/gazzardentalclinics",
+    "https://www.facebook.com/share/1B3yHsctPV/",
+    "https://www.tiktok.com/@gazzar.dental.clinics"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "@id": "https://www.gazzardentalclinic.com/tr.html#services",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Service",
+        "name": "Clear Aligners",
+        "url": "https://www.gazzardentalclinic.com/clear-aligners-alexandria-en.html",
+        "description": "Discreet orthodontic treatment with digital planning in Alexandria.",
+        "provider": {
+          "@id": "https://www.gazzardentalclinic.com/#dentist"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "EGP",
+          "price": "25000",
+          "availability": "https://schema.org/InStock"
+        }
+      }
     },
-    "areaServed": ["Alexandria", "Egypt", "International patients"],
-    "medicalSpecialty": ["Estetik Diş Hekimliği", "Şeffaf Plak", "Dental Implants", "Dijital Gülüş Tasarımı"],
-    "founder": {"@type":"Person","name":"Dr. Omar El-Gazzar"},
-    "sameAs": [
-      "https://www.instagram.com/gazzardentalclinics",
-      "https://www.facebook.com/share/1B3yHsctPV/",
-      "https://www.tiktok.com/@gazzar.dental.clinics"
-    ]
-  }
-  </script>
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Service",
+        "name": "Swiss Emax Veneers",
+        "url": "https://www.gazzardentalclinic.com/emax-veneers-alexandria-en.html",
+        "description": "Natural-looking smile makeover veneers in Alexandria.",
+        "provider": {
+          "@id": "https://www.gazzardentalclinic.com/#dentist"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "EGP",
+          "price": "50000",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Service",
+        "name": "Laser Teeth Whitening",
+        "url": "https://www.gazzardentalclinic.com/laser-teeth-whitening-alexandria-en.html",
+        "description": "In-clinic laser whitening after dental assessment.",
+        "provider": {
+          "@id": "https://www.gazzardentalclinic.com/#dentist"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "EGP",
+          "price": "3500",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Service",
+        "name": "Zirconia Crowns",
+        "url": "https://www.gazzardentalclinic.com/zirconia-crowns-alexandria-en.html",
+        "description": "Strong natural-looking zirconia dental crowns.",
+        "provider": {
+          "@id": "https://www.gazzardentalclinic.com/#dentist"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "EGP",
+          "price": "3500",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "Service",
+        "name": "Full Arch Dental Implants",
+        "url": "https://www.gazzardentalclinic.com/full-arch-dental-implants-alexandria-en.html",
+        "description": "Full-arch teeth restoration after clinical and digital evaluation.",
+        "provider": {
+          "@id": "https://www.gazzardentalclinic.com/#dentist"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "EGP",
+          "price": "90000",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://www.gazzardentalclinic.com/tr.html#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Şeffaf plak tedavisi benim için uygun mu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Şeffaf plaklar hafif ve orta seviye çapraşıklık, aralık veya diş eğimi durumlarında uygun olabilir; karar muayene ve dijital planlama sonrası verilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Emax veneer ve zirkonyum arasındaki fark nedir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Emax daha doğal şeffaflık isteyen ön bölge estetik vakalarında tercih edilebilir; zirkonyum ise daha yüksek dayanıklılık gereken durumlarda uygundur."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Lazer diş beyazlatma güvenli midir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Beyazlatma, diş ve diş eti değerlendirmesi sonrası klinikte uygulanır; geçici hassasiyet görülebilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Randevu nasıl alabilirim?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "WhatsApp üzerinden doğrudan randevu talebi gönderebilir veya kliniği arayabilirsiniz."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "GAZZAR Dental Clinic nerede?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Klinik, İskenderiye Loran’da Abu Qir Street üzerinde, Venezia Towers ve QNB Bank yakınında yer alır."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Ana Sayfa",
+      "item": "https://www.gazzardentalclinic.com/tr.html"
+    }
+  ]
+}
+</script>
 </head>
 <body class="inner-page english-page turkish-page">
   <!-- SEO_GEO_FINAL_VISIBLE_BUILD_2026 -->
@@ -62,7 +266,7 @@
   <nav class="mobile-menu" data-menu>
     <button class="menu-close" data-menu-toggle aria-label="Close menu">×</button>
     <img loading="lazy" class="menu-logo" src="logo-original.png" alt="GAZZAR Dental Clinic logo" />
-    <a href="#home">Home</a><a href="#treatments">Treatments</a><a href="#results">Results</a><a href="#reviews">Reviews</a><a href="#doctor">Doctor</a><a href="#tourism">Dental Tourism</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+    <a href="#home">Ana Sayfa</a><a href="#treatments">Tedaviler</a><a href="#results">Sonuçlar</a><a href="#reviews">Yorumlar</a><a href="#doctor">Doktor</a><a href="#tourism">Dental Turizm</a><a href="#faq">SSS</a><a href="#contact">İletişim</a>
   </nav>
 
   <main>
@@ -76,53 +280,53 @@
           <a class="btn btn-dark" href="https://wa.me/201221753277?text=Merhaba%2C%20GAZZAR%20Dental%20Clinic%27te%20Dr.%20Omar%20El-Gazzar%20ile%20randevu%20almak%20istiyorum" target="_blank" rel="noopener">Randevu Al</a>
           <a class="btn btn-outline" href="https://wa.me/201221753277?text=Merhaba%2C%20GAZZAR%20Dental%20Clinic%27te%20Dr.%20Omar%20El-Gazzar%20ile%20randevu%20almak%20istiyorum" target="_blank" rel="noopener">WhatsApp</a>
         </div>
-        <div class="trust-pills"><span>10+ Years Experience</span><span>Digital Planning</span><span>Transparent Prices</span><span>Documented Results</span></div>
+        <div class="trust-pills"><span>10+ Yıl Deneyim</span><span>Dijital Planlama</span><span>Şeffaf Fiyatlar</span><span>Documented Sonuçlar</span></div>
       </div>
       <div class="hero-visual reveal">
-        <img loading="eager" src="hero-patient-clean.jpg" alt="Natural smile at GAZZAR Dental Clinic Alexandria" />
-        <div class="hero-card"><span>Premium Smile Care</span><strong>Natural results start with precise assessment</strong></div>
+        <img loading="eager" src="hero-patient-clean.jpg" alt="GAZZAR Dental Clinic İskenderiye’de doğal gülüş" />
+        <div class="hero-card"><span>Premium Gülüş Bakımı</span><strong>Doğal sonuçlar doğru değerlendirme ile başlar</strong></div>
       </div>
     </section>
 
     <section class="section treatments" id="treatments">
-      <div class="section-head reveal"><p class="eyebrow">SIGNATURE TREATMENTS</p><h2>En Çok Tercih Edilen Tedaviler</h2><p>Tedavinizi seçin, başlangıç fiyatını görün ve WhatsApp üzerinden randevu alın.</p><div class="swipe-hint">← Swipe to view more →</div></div>
+      <div class="section-head reveal"><p class="eyebrow">ÖNE ÇIKAN TEDAVİLER</p><h2>En Çok Tercih Edilen Tedaviler</h2><p>Tedavinizi seçin, başlangıç fiyatını görün ve WhatsApp üzerinden randevu alın.</p><div class="swipe-hint">← Daha fazlası için kaydırın →</div></div>
       <div class="carousel-wrap reveal"><button class="carousel-arrow prev" data-carousel-prev="services" aria-label="Previous">‹</button><div class="carousel-track service-track" data-carousel="services">
-          <article class="service-card"><img loading="lazy" src="service-aligners.jpg" alt="Clear aligners in Alexandria Egypt" /><div class="service-body"><span class="tag">Digital planning</span><h3>Şeffaf Plak</h3><p>Discreet orthodontic treatment for both arches with digital planning and follow-up.</p><div class="price"><span>Starting from</span><strong>25,000 EGP</strong></div><div class="service-actions"><a class="service-more" href="clear-aligners-alexandria-tr.html">Treatment details</a><a class="book-service" href="https://wa.me/201221753277?text=Merhaba%2C%20GAZZAR%20Dental%20Clinic%27te%20Dr.%20Omar%20El-Gazzar%20ile%20randevu%20almak%20istiyorum" target="_blank" rel="noopener">Book assessment</a></div></div></article>
-          <article class="service-card"><img loading="lazy" src="service-emax.jpg" alt="Swiss Emax veneers in Alexandria Egypt" /><div class="service-body"><span class="tag">16 teeth + written guarantee</span><h3>Swiss Emax Veneer</h3><p>Full smile makeover package for both arches with natural translucency and planning.</p><div class="price"><span>Starting from</span><strong>50,000 EGP</strong></div><div class="service-actions"><a class="service-more" href="emax-veneers-alexandria-tr.html">Veneers details</a><a class="book-service" href="https://wa.me/201221753277?text=Merhaba%2C%20GAZZAR%20Dental%20Clinic%27te%20Dr.%20Omar%20El-Gazzar%20ile%20randevu%20almak%20istiyorum" target="_blank" rel="noopener">Ask about veneers</a></div></div></article>
-          <article class="service-card"><img loading="lazy" src="service-bleaching.jpg" alt="Laser teeth whitening in Alexandria" /><div class="service-body"><span class="tag">Before occasions</span><h3>Lazer Beyazlatma</h3><p>In-clinic whitening after assessment of enamel, gums and existing restorations.</p><div class="price"><span>Starting from</span><strong>3,500 EGP</strong></div><div class="service-actions"><a class="service-more" href="laser-teeth-whitening-alexandria.html">Whitening details</a><a class="book-service" href="https://wa.me/201221753277?text=Merhaba%2C%20GAZZAR%20Dental%20Clinic%27te%20Dr.%20Omar%20El-Gazzar%20ile%20randevu%20almak%20istiyorum" target="_blank" rel="noopener">Book whitening</a></div></div></article>
-          <article class="service-card"><img loading="lazy" src="service-zirconia.jpg" alt="Zirconia crowns in Alexandria" /><div class="service-body"><span class="tag">Digital workflow</span><h3>Zirkonyum Kaplama</h3><p>Strong, natural-looking crowns for damaged, weak or previously treated teeth.</p><div class="price"><span>Starting from</span><strong>3,500 EGP</strong></div><div class="service-actions"><a class="service-more" href="zirconia-crowns-alexandria.html">Zirconia details</a><a class="book-service" href="https://wa.me/201221753277?text=Merhaba%2C%20GAZZAR%20Dental%20Clinic%27te%20Dr.%20Omar%20El-Gazzar%20ile%20randevu%20almak%20istiyorum" target="_blank" rel="noopener">Ask now</a></div></div></article>
-          <article class="service-card"><img loading="lazy" src="service-composite.jpg" alt="Composite restoration in Alexandria" /><div class="service-body"><span class="tag">1-year guarantee</span><h3>Kompozit Restorasyon</h3><p>Tooth-colored restoration for decay, minor fractures and aesthetic repairs.</p><div class="price"><span>Starting from</span><strong>1,500 EGP</strong></div><div class="service-actions"><a class="service-more" href="composite-restoration-alexandria.html">Composite details</a><a class="book-service" href="https://wa.me/201221753277?text=Merhaba%2C%20GAZZAR%20Dental%20Clinic%27te%20Dr.%20Omar%20El-Gazzar%20ile%20randevu%20almak%20istiyorum" target="_blank" rel="noopener">Book composite</a></div></div></article>
-          <article class="service-card"><img loading="lazy" src="service-implants.jpg" alt="Full arch dental implants in Alexandria" /><div class="service-body"><span class="tag">Teeth restoration included</span><h3>Tam Çene İmplant</h3><p>Comprehensive full-arch restoration after bone, gum and digital treatment evaluation.</p><div class="price"><span>Starting from</span><strong>90,000 EGP</strong></div><div class="service-actions"><a class="service-more" href="full-arch-dental-implants-alexandria.html">Implants details</a><a class="book-service" href="https://wa.me/201221753277?text=Merhaba%2C%20GAZZAR%20Dental%20Clinic%27te%20Dr.%20Omar%20El-Gazzar%20ile%20randevu%20almak%20istiyorum" target="_blank" rel="noopener">Book consultation</a></div></div></article>
+          <article class="service-card"><img loading="lazy" src="service-aligners.jpg" alt="Clear aligners in Alexandria Egypt" /><div class="service-body"><span class="tag">Dijital planlama</span><h3>Şeffaf Plak</h3><p>Dijital planlama ve takip ile iki çene için estetik şeffaf plak tedavisi.</p><div class="price"><span>Starting from</span><strong>25,000 EGP</strong></div><div class="service-actions"><a class="service-more" href="clear-aligners-alexandria-tr.html">Tedavi detayları</a><a class="book-service" href="https://wa.me/201221753277?text=Merhaba%2C%20GAZZAR%20Dental%20Clinic%27te%20Dr.%20Omar%20El-Gazzar%20ile%20randevu%20almak%20istiyorum" target="_blank" rel="noopener">Randevu al</a></div></div></article>
+          <article class="service-card"><img loading="lazy" src="service-emax.jpg" alt="Swiss Emax veneers in Alexandria Egypt" /><div class="service-body"><span class="tag">16 diş + yazılı garanti</span><h3>Swiss Emax Veneer</h3><p>Doğal ışık geçirgenliği ve planlama ile iki çene için gülüş tasarımı paketi.</p><div class="price"><span>Starting from</span><strong>50,000 EGP</strong></div><div class="service-actions"><a class="service-more" href="emax-veneers-alexandria-tr.html">Veneer detayları</a><a class="book-service" href="https://wa.me/201221753277?text=Merhaba%2C%20GAZZAR%20Dental%20Clinic%27te%20Dr.%20Omar%20El-Gazzar%20ile%20randevu%20almak%20istiyorum" target="_blank" rel="noopener">Veneer hakkında sor</a></div></div></article>
+          <article class="service-card"><img loading="lazy" src="service-bleaching.jpg" alt="Laser teeth whitening in Alexandria" /><div class="service-body"><span class="tag">Özel günler öncesi</span><h3>Lazer Beyazlatma</h3><p>Mine, diş eti ve mevcut restorasyonlar değerlendirildikten sonra klinikte beyazlatma.</p><div class="price"><span>Starting from</span><strong>3,500 EGP</strong></div><div class="service-actions"><a class="service-more" href="laser-teeth-whitening-alexandria.html">Beyazlatma detayları</a><a class="book-service" href="https://wa.me/201221753277?text=Merhaba%2C%20GAZZAR%20Dental%20Clinic%27te%20Dr.%20Omar%20El-Gazzar%20ile%20randevu%20almak%20istiyorum" target="_blank" rel="noopener">Beyazlatma randevusu al</a></div></div></article>
+          <article class="service-card"><img loading="lazy" src="service-zirconia.jpg" alt="Zirconia crowns in Alexandria" /><div class="service-body"><span class="tag">Dijital iş akışı</span><h3>Zirkonyum Kaplama</h3><p>Hasarlı, zayıf veya daha önce tedavi görmüş dişler için güçlü ve doğal görünümlü kaplamalar.</p><div class="price"><span>Starting from</span><strong>3,500 EGP</strong></div><div class="service-actions"><a class="service-more" href="zirconia-crowns-alexandria.html">Zirkonyum detayları</a><a class="book-service" href="https://wa.me/201221753277?text=Merhaba%2C%20GAZZAR%20Dental%20Clinic%27te%20Dr.%20Omar%20El-Gazzar%20ile%20randevu%20almak%20istiyorum" target="_blank" rel="noopener">Şimdi sor</a></div></div></article>
+          <article class="service-card"><img loading="lazy" src="service-composite.jpg" alt="Composite restoration in Alexandria" /><div class="service-body"><span class="tag">1 yıl garanti</span><h3>Kompozit Restorasyon</h3><p>Çürük, küçük kırıklar ve estetik düzeltmeler için diş renginde restorasyon.</p><div class="price"><span>Starting from</span><strong>1,500 EGP</strong></div><div class="service-actions"><a class="service-more" href="composite-restoration-alexandria.html">Kompozit detayları</a><a class="book-service" href="https://wa.me/201221753277?text=Merhaba%2C%20GAZZAR%20Dental%20Clinic%27te%20Dr.%20Omar%20El-Gazzar%20ile%20randevu%20almak%20istiyorum" target="_blank" rel="noopener">Kompozit randevusu al</a></div></div></article>
+          <article class="service-card"><img loading="lazy" src="service-implants.jpg" alt="Full arch dental implants in Alexandria" /><div class="service-body"><span class="tag">Diş restorasyonu dahil</span><h3>Tam Çene İmplant</h3><p>Kemik, diş eti ve dijital tedavi değerlendirmesi sonrası kapsamlı tam çene restorasyonu.</p><div class="price"><span>Starting from</span><strong>90,000 EGP</strong></div><div class="service-actions"><a class="service-more" href="full-arch-dental-implants-alexandria.html">İmplant detayları</a><a class="book-service" href="https://wa.me/201221753277?text=Merhaba%2C%20GAZZAR%20Dental%20Clinic%27te%20Dr.%20Omar%20El-Gazzar%20ile%20randevu%20almak%20istiyorum" target="_blank" rel="noopener">Konsültasyon al</a></div></div></article>
       </div><button class="carousel-arrow next" data-carousel-next="services" aria-label="Next">›</button><div class="carousel-dots" data-carousel-dots="services"></div></div>
     </section>
 
-    <section class="section results" id="results"><div class="section-head reveal"><p class="eyebrow">BEFORE & AFTER</p><h2>Planınızı Görmenize Yardımcı Gerçek Sonuçlar</h2><p>Sonuçlar hastaya göre değişir ve nihai plan muayene sonrası belirlenir.</p></div><div class="carousel-wrap reveal"><button class="carousel-arrow prev" data-carousel-prev="cases" aria-label="Previous">‹</button><div class="carousel-track case-track" data-carousel="cases">
-      <article class="case-card"><img loading="lazy" src="case-clear-1.jpg" alt="Clear aligners result"><div><strong>Şeffaf Plak</strong><span>Digital alignment</span></div></article>
-      <article class="case-card"><img loading="lazy" src="case-emax.jpg" alt="Emax veneers result"><div><strong>Emax Veneers</strong><span>Smile makeover</span></div></article>
-      <article class="case-card"><img loading="lazy" src="case-bleaching.jpg" alt="Laser whitening result"><div><strong>Laser Whitening</strong><span>Brighter smile</span></div></article>
-      <article class="case-card"><img loading="lazy" src="case-zirconia-1.jpg" alt="Zirconia crowns result"><div><strong>Zirconia Crowns</strong><span>Natural restoration</span></div></article>
-      <article class="case-card"><img loading="lazy" src="case-composite.jpg" alt="Composite restoration result"><div><strong>Composite</strong><span>Aesthetic repair</span></div></article>
+    <section class="section results" id="results"><div class="section-head reveal"><p class="eyebrow">ÖNCESİ & SONRASI</p><h2>Planınızı Görmenize Yardımcı Gerçek Sonuçlar</h2><p>Sonuçlar hastaya göre değişir ve nihai plan muayene sonrası belirlenir.</p></div><div class="carousel-wrap reveal"><button class="carousel-arrow prev" data-carousel-prev="cases" aria-label="Previous">‹</button><div class="carousel-track case-track" data-carousel="cases">
+      <article class="case-card"><img loading="lazy" src="case-clear-1.jpg" alt="Clear aligners result"><div><strong>Şeffaf Plak</strong><span>Dijital hizalama</span></div></article>
+      <article class="case-card"><img loading="lazy" src="case-emax.jpg" alt="Emax veneers result"><div><strong>Emax Veneers</strong><span>Gülüş tasarımı</span></div></article>
+      <article class="case-card"><img loading="lazy" src="case-bleaching.jpg" alt="Laser whitening result"><div><strong>Lazer Beyazlatma</strong><span>Daha parlak gülüş</span></div></article>
+      <article class="case-card"><img loading="lazy" src="case-zirconia-1.jpg" alt="Zirconia crowns result"><div><strong>Zirconia Crowns</strong><span>Doğal restorasyon</span></div></article>
+      <article class="case-card"><img loading="lazy" src="case-composite.jpg" alt="Composite restoration result"><div><strong>Composite</strong><span>Estetik onarım</span></div></article>
     </div><button class="carousel-arrow next" data-carousel-next="cases" aria-label="Next">›</button><div class="carousel-dots" data-carousel-dots="cases"></div></div></section>
 
     <section class="section reviews" id="reviews"><div class="section-head reveal"><p class="eyebrow">GOOGLE REVIEWS</p><h2>Hasta Yorumları</h2><p>Randevu öncesi güven oluşturan gerçek hasta yorumları.</p></div><div class="carousel-wrap reveal"><button class="carousel-arrow prev" data-carousel-prev="reviews" aria-label="Previous">‹</button><div class="carousel-track review-track" data-carousel="reviews">
-      <article class="review-card"><div class="review-head"><strong>Olx Demon</strong><span>Google Review</span></div><div class="stars">★★★★★</div><p>Clean and professional clinic. Dr. Omar is excellent and comfortable to deal with.</p></article>
-      <article class="review-card"><div class="review-head"><strong>Mai Abdelmoneim</strong><span>Google Review</span></div><div class="stars">★★★★★</div><p>Great whitening experience and excellent care about the final result.</p></article>
-      <article class="review-card"><div class="review-head"><strong>Dark Asal</strong><span>Google Review</span></div><div class="stars">★★★★★</div><p>Easy to find, professional staff, great doctor and always a clean clinic.</p></article>
+      <article class="review-card"><div class="review-head"><strong>Olx Demon</strong><span>Google Review</span></div><div class="stars">★★★★★</div><p>Temiz ve profesyonel bir klinik. Dr. Omar çok iyi ve iletişimi rahat.</p></article>
+      <article class="review-card"><div class="review-head"><strong>Mai Abdelmoneim</strong><span>Google Review</span></div><div class="stars">★★★★★</div><p>Çok iyi bir beyazlatma deneyimi ve sonuca gösterilen güçlü ilgi.</p></article>
+      <article class="review-card"><div class="review-head"><strong>Dark Asal</strong><span>Google Review</span></div><div class="stars">★★★★★</div><p>Kolay bulunan konum, profesyonel ekip, iyi doktor ve her zaman temiz klinik.</p></article>
     </div><button class="carousel-arrow next" data-carousel-next="reviews" aria-label="Next">›</button><div class="carousel-dots" data-carousel-dots="reviews"></div></div></section>
 
     <section class="section doctor" id="doctor"><div class="doctor-card reveal"><div class="doctor-photo"><img loading="lazy" src="doctor-omar.jpg" alt="Dr. Omar El-Gazzar at GAZZAR Dental Clinic Alexandria"></div><div class="doctor-copy"><p class="eyebrow">DR. OMAR EL-GAZZAR</p><h2>Dr. Omar El-Gazzar</h2><p>Şeffaf plak, estetik diş hekimliği ve doğal görünümlü dijital gülüş planlamasına odaklanır.</p><p><a class="inline-link" href="dr-omar-elgazzar-tr.html">Doktor profili</a></p><div class="badges"><span>Şeffaf Plak</span><span>Estetik Diş Hekimliği</span><span>Dijital Gülüş Tasarımı</span><span>10+ Years</span></div><div class="doctor-actions"><a class="btn btn-outline" href="dr-omar-elgazzar-tr.html">Profili görüntüle</a><a class="btn btn-dark" href="https://wa.me/201221753277?text=Merhaba%2C%20GAZZAR%20Dental%20Clinic%27te%20Dr.%20Omar%20El-Gazzar%20ile%20randevu%20almak%20istiyorum" target="_blank" rel="noopener">Dr. Omar ile randevu al</a></div></div></div></section>
 
-    <section class="why reveal"><div class="why-item"><strong>Digital Planning</strong><span>Every case starts with assessment and planning.</span></div><div class="why-item"><strong>Natural Results</strong><span>Smile design that fits the face and personality.</span></div><div class="why-item"><strong>High Sterilization</strong><span>Clean, organized and comfortable clinical environment.</span></div><div class="why-item"><strong>Follow-up</strong><span>Clear instructions and post-treatment care.</span></div></section>
+    <section class="why reveal"><div class="why-item"><strong>Dijital Planlama</strong><span>Her vaka değerlendirme ve planlama ile başlar.</span></div><div class="why-item"><strong>Natural Sonuçlar</strong><span>Yüze ve kişiliğe uygun gülüş tasarımı.</span></div><div class="why-item"><strong>Yüksek Sterilizasyon</strong><span>Temiz, düzenli ve konforlu klinik ortamı.</span></div><div class="why-item"><strong>Takip</strong><span>Net talimatlar ve tedavi sonrası bakım.</span></div></section>
 
-    <section class="section faq" id="faq"><div class="section-head reveal"><p class="eyebrow">PATIENT REHBER</p><h2>Sık Sorulan Sorular</h2><p>Short answers designed for patients, Google and AI search understanding.</p></div><div class="faq-grid reveal"><details><summary>Uluslararası hastalar uzaktan başlayabilir mi?</summary><p>Evet. Hastalar seyahat öncesi fotoğraf, röntgen ve video değerlendirmesi ile başlayabilir.</p></details><details><summary>Hangi estetik tedaviler mevcut?</summary><p>Şeffaf plak, Emax veneer, zirkonyum kaplama, diş beyazlatma, kompozit restorasyon ve tam ağız rehabilitasyonu.</p></details><details><summary>Muayene öncesi fiyat alabilir miyim?</summary><p>Başlangıç fiyatları paylaşılır; nihai plan klinik değerlendirme sonrası belirlenir.</p></details><details><summary>Nasıl randevu alırım?</summary><p>WhatsApp üzerinden doğrudan randevu talebi gönderebilirsiniz.</p></details></div></section>
+    <section class="section faq" id="faq"><div class="section-head reveal"><p class="eyebrow">PATIENT REHBER</p><h2>Sık Sorulan Sorular</h2><p>Hastalar, Google ve yapay zekâ aramaları için net ve kısa cevaplar.</p></div><div class="faq-grid reveal"><details><summary>Uluslararası hastalar uzaktan başlayabilir mi?</summary><p>Evet. Hastalar seyahat öncesi fotoğraf, röntgen ve video değerlendirmesi ile başlayabilir.</p></details><details><summary>Hangi estetik tedaviler mevcut?</summary><p>Şeffaf plak, Emax veneer, zirkonyum kaplama, diş beyazlatma, kompozit restorasyon ve tam ağız rehabilitasyonu.</p></details><details><summary>Muayene öncesi fiyat alabilir miyim?</summary><p>Başlangıç fiyatları paylaşılır; nihai plan klinik değerlendirme sonrası belirlenir.</p></details><details><summary>Nasıl randevu alırım?</summary><p>WhatsApp üzerinden doğrudan randevu talebi gönderebilirsiniz.</p></details></div></section>
 
-    <section class="section faq" id="tourism"><div class="section-head reveal"><p class="eyebrow">MEDICAL TOURISM</p><h2>Mısır’da Dental Turizm</h2><p>Uluslararası hastalar İskenderiye’ye gelmeden önce uzaktan değerlendirme ile tedavi planına başlayabilir.</p></div><div class="related-grid reveal"><a class="related-card" href="dental-tourism-egypt-alexandria-tr.html"><span>Guide</span><strong>İskenderiye’de dental turizm</strong></a><a class="related-card" href="dental-tourism-egypt-vs-turkey-tr.html"><span>Comparison</span><strong>Mısır mı Türkiye mi diş tedavisi?</strong></a><a class="related-card" href="full-mouth-rehabilitation-egypt-dental-tourism-tr.html"><span>International</span><strong>Mısır’da tam ağız rehabilitasyonu</strong></a><a class="related-card" href="clear-aligners-alexandria-tr.html"><span>Remote care</span><strong>Uluslararası hastalar için şeffaf plak</strong></a></div></section>
+    <section class="section faq" id="tourism"><div class="section-head reveal"><p class="eyebrow">MEDICAL TOURISM</p><h2>Mısır’da Dental Turizm</h2><p>Uluslararası hastalar İskenderiye’ye gelmeden önce uzaktan değerlendirme ile tedavi planına başlayabilir.</p></div><div class="related-grid reveal"><a class="related-card" href="dental-tourism-egypt-alexandria-tr.html"><span>Rehber</span><strong>İskenderiye’de dental turizm</strong></a><a class="related-card" href="dental-tourism-egypt-vs-turkey-tr.html"><span>Karşılaştırma</span><strong>Mısır mı Türkiye mi diş tedavisi?</strong></a><a class="related-card" href="full-mouth-rehabilitation-egypt-dental-tourism-tr.html"><span>Uluslararası</span><strong>Mısır’da tam ağız rehabilitasyonu</strong></a><a class="related-card" href="clear-aligners-alexandria-tr.html"><span>Uzaktan değerlendirme</span><strong>Uluslararası hastalar için şeffaf plak</strong></a></div></section>
 
-    <section class="section gallery"><div class="section-head reveal"><p class="eyebrow">CLINIC GALLERY</p><h2>Klinikten Görüntüler</h2><p>Reception, treatment rooms and clinic environment in Loran, Alexandria.</p></div><div class="carousel-wrap reveal"><button class="carousel-arrow prev" data-carousel-prev="gallery" aria-label="Previous">‹</button><div class="carousel-track gallery-track" data-carousel="gallery"><article class="gallery-card"><img loading="lazy" src="clinic-front.jpg" alt="GAZZAR Dental Clinic front"></article><article class="gallery-card"><img loading="lazy" src="clinic-reception.jpg" alt="GAZZAR Dental Clinic reception"></article><article class="gallery-card"><img loading="lazy" src="clinic-room.jpg" alt="Dental treatment room"></article><article class="gallery-card"><img loading="lazy" src="clinic-waiting.jpg" alt="Patient waiting area"></article></div><button class="carousel-arrow next" data-carousel-next="gallery" aria-label="Next">›</button><div class="carousel-dots" data-carousel-dots="gallery"></div></div></section>
+    <section class="section gallery"><div class="section-head reveal"><p class="eyebrow">CLINIC GALLERY</p><h2>Klinikten Görüntüler</h2><p>Loran, İskenderiye’de resepsiyon, tedavi odaları ve klinik ortamı.</p></div><div class="carousel-wrap reveal"><button class="carousel-arrow prev" data-carousel-prev="gallery" aria-label="Previous">‹</button><div class="carousel-track gallery-track" data-carousel="gallery"><article class="gallery-card"><img loading="lazy" src="clinic-front.jpg" alt="GAZZAR Dental Clinic dış cephe"></article><article class="gallery-card"><img loading="lazy" src="clinic-reception.jpg" alt="GAZZAR Dental Clinic resepsiyon"></article><article class="gallery-card"><img loading="lazy" src="clinic-room.jpg" alt="Diş tedavi odası"></article><article class="gallery-card"><img loading="lazy" src="clinic-waiting.jpg" alt="Hasta bekleme alanı"></article></div><button class="carousel-arrow next" data-carousel-next="gallery" aria-label="Next">›</button><div class="carousel-dots" data-carousel-dots="gallery"></div></div></section>
 
-    <section class="booking-mini reveal"><div><p class="eyebrow">BOOKING</p><h2>Randevu Al</h2><p>You will be redirected to WhatsApp and our team will confirm your appointment.</p><p class="working-hours">Çalışma saatleri: Her gün 15:00 - 22:00 — Cuma kapalı</p></div><a class="btn btn-dark" href="https://wa.me/201221753277?text=Merhaba%2C%20GAZZAR%20Dental%20Clinic%27te%20Dr.%20Omar%20El-Gazzar%20ile%20randevu%20almak%20istiyorum" target="_blank" rel="noopener">Randevu Al</a><a class="btn btn-outline" href="tel:035789900">Call <span dir="ltr">03 578 9900</span></a></section>
+    <section class="booking-mini reveal"><div><p class="eyebrow">BOOKING</p><h2>Randevu Al</h2><p>WhatsApp’a yönlendirilirsiniz ve ekibimiz randevunuzu onaylar.</p><p class="working-hours">Çalışma saatleri: Her gün 15:00 - 22:00 — Cuma kapalı</p></div><a class="btn btn-dark" href="https://wa.me/201221753277?text=Merhaba%2C%20GAZZAR%20Dental%20Clinic%27te%20Dr.%20Omar%20El-Gazzar%20ile%20randevu%20almak%20istiyorum" target="_blank" rel="noopener">Randevu Al</a><a class="btn btn-outline" href="tel:035789900">Ara <span dir="ltr">03 578 9900</span></a></section>
 
-    <section class="section contact" id="contact"><div class="contact-card reveal"><div class="contact-info"><p class="eyebrow">CONTACT</p><h2>Loran’da Bizi Ziyaret Edin</h2><p>723 Loran, Abu Qir Street, Venezia Towers, QNB Bank yakınında, Madinet Al Ahlam karşısı – Alexandria.</p><div class="contact-actions"><a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&query=Gazzar%20Dental%20Clinic%20Loran%20Alexandria" target="_blank" rel="noopener">Open Map</a><a class="btn btn-outline" href="tel:035789900">Call <span dir="ltr">03 578 9900</span></a><a class="btn btn-outline" href="https://wa.me/201221753277?text=Merhaba%2C%20GAZZAR%20Dental%20Clinic%27te%20Dr.%20Omar%20El-Gazzar%20ile%20randevu%20almak%20istiyorum" target="_blank" rel="noopener">WhatsApp</a></div></div><img loading="lazy" src="clinic-front.jpg" alt="GAZZAR Dental Clinic front entrance in Alexandria"></div></section>
+    <section class="section contact" id="contact"><div class="contact-card reveal"><div class="contact-info"><p class="eyebrow">İLETİŞİM</p><h2>Loran’da Bizi Ziyaret Edin</h2><p>723 Loran, Abu Qir Street, Venezia Towers, QNB Bank yakınında, Madinet Al Ahlam karşısı – Alexandria.</p><div class="contact-actions"><a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&query=Gazzar%20Dental%20Clinic%20Loran%20Alexandria" target="_blank" rel="noopener">Haritada Aç</a><a class="btn btn-outline" href="tel:035789900">Ara <span dir="ltr">03 578 9900</span></a><a class="btn btn-outline" href="https://wa.me/201221753277?text=Merhaba%2C%20GAZZAR%20Dental%20Clinic%27te%20Dr.%20Omar%20El-Gazzar%20ile%20randevu%20almak%20istiyorum" target="_blank" rel="noopener">WhatsApp</a></div></div><img loading="lazy" src="clinic-front.jpg" alt="İskenderiye’de GAZZAR Dental Clinic girişi"></div></section>
   </main>
   <footer class="footer"><img loading="lazy" src="logo-original.png" alt="GAZZAR Dental Clinic"><p>Premium digital and cosmetic dentistry in Loran, Alexandria.</p></footer>
   <a class="whatsapp-float" href="https://wa.me/201221753277?text=Merhaba%2C%20GAZZAR%20Dental%20Clinic%27te%20Dr.%20Omar%20El-Gazzar%20ile%20randevu%20almak%20istiyorum" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.03 3C8.85 3 3.02 8.7 3.02 15.73c0 2.46.72 4.76 1.96 6.7L3 29l6.84-1.8a13.2 13.2 0 0 0 6.19 1.54c7.18 0 13.01-5.7 13.01-12.73C29.04 8.7 23.21 3 16.03 3Z"/></svg></a>
