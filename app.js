@@ -10,7 +10,6 @@
   if (timeInput) {
     timeInput.setAttribute('min', '15:00');
     timeInput.setAttribute('max', '22:00');
-    timeInput.setAttribute('step', '900');
   }
 
   function isFriday(dateValue) {
