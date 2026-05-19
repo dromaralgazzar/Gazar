@@ -22,16 +22,12 @@
     return v >= '15:00' && v <= '22:00';
   }
 
+  // UX note: do not alert while the patient is scrolling the mobile time picker.
+  // Time is validated only when submitting the booking form.
+
   dateInput?.addEventListener('change', function(){
     if (isFriday(this.value)) {
       alert('الجمعة إجازة. اختر يومًا من السبت إلى الخميس.');
-      this.value = '';
-    }
-  });
-
-  timeInput?.addEventListener('change', function(){
-    if (this.value && !validTime(this.value)) {
-      alert('المواعيد المتاحة من 3:00 مساءً إلى 10:00 مساءً فقط.');
       this.value = '';
     }
   });
